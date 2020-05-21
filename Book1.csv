@@ -1,4 +1,4 @@
-r1c1,12,r1c3,14,
-r2c1,22,,,
-,,r3c3,,
-,,,,45
+first_name,last_name,username
+Rob,Pike,rob
+Ken,Thompson,ken
+Robert,Griesemer,gri
