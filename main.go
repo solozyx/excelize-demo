@@ -11,10 +11,19 @@ func init() {
 }
 
 func main() {
-	openFile()
+	openCsv()
+	// openXlsx()
 }
 
-func openFile() {
+func openCsv() {
+	f, err := excelize.OpenFile("Book1.csv")
+	if err != nil {
+		panic(err)
+	}
+	logrus.Debugf("f=%+v", f)
+}
+
+func openXlsx() {
 	f, err := excelize.OpenFile("Book1.xlsx")
 	if err != nil {
 		panic(err)
