@@ -1,0 +1,12 @@
+Microsoft Windows [版本 10.0.18362.778]
+(c) 2019 Microsoft Corporation。保留所有权利。
+
+C:\blockchainenv\githubProj\excelize-demo>go get github.com/360EntSecGroup-Skylar/excelize
+go: downloading github.com/360EntSecGroup-Skylar/excelize v1.4.1
+go: github.com/360EntSecGroup-Skylar/excelize upgrade => v1.4.1
+go: downloading github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
+
+C:\blockchainenv\githubProj\excelize-demo>go get github.com/sirupsen/logrus
+go: github.com/sirupsen/logrus upgrade => v1.6.0
+C:\blockchainenv\githubProj\excelize-demo>
+
