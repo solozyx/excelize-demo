@@ -14,6 +14,7 @@ func main() {
 	// csvImportSmall()
 	// csvExportAppend()
 
-	//xlsxImport()
-	xlsxExportSample()
+	// xlsxImport()
+	// xlsxExportSample()
+	xlsxExportChart()
 }
