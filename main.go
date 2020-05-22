@@ -15,9 +15,9 @@ func init() {
 }
 
 func main() {
-	// openCsv()
-	// openXlsx()
-	exportCsv()
+	// csvImportLarge()
+	// csvImportSmall()
+	// csvExportAppend()
 }
 
 func openCsv() {
@@ -92,4 +92,20 @@ func exportCsv() {
 	if err := w.Error(); err != nil {
 		log.Fatal(err)
 	}
+}
+
+func importCsv() {
+	f, err := os.OpenFile("Book1.csv", os.O_RDWR, os.ModePerm)
+	if err != nil {
+		panic(err)
+	}
+	r := csv.NewReader(f)
+
+	strs, err := r.Read()
+	if err != nil {
+		panic(err)
+	}
+
+	logrus.Debugf("importCsv strs=%+v", strs)
+
 }
