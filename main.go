@@ -16,5 +16,6 @@ func main() {
 
 	// xlsxImport()
 	// xlsxExportSample()
-	xlsxExportChart()
+	// xlsxExportChart()
+	xlsxExportPicture()
 }

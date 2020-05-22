@@ -3,6 +3,10 @@ package main
 import (
 	"fmt"
 
+	_ "image/gif"
+	_ "image/jpeg"
+	_ "image/png"
+
 	"github.com/360EntSecGroup-Skylar/excelize/v2"
 	"github.com/sirupsen/logrus"
 )
@@ -116,5 +120,37 @@ func xlsxExportChart() {
 	err = f.SaveAs("Book3.xlsx")
 	if err != nil {
 		fmt.Println(err)
+	}
+}
+
+func xlsxExportPicture() {
+	f, err := excelize.OpenFile("Book4.xlsx")
+	if err != nil {
+		panic(err)
+	}
+
+	// Insert a picture.
+	err = f.AddPicture("Sheet1", "A7", "image.png", "")
+	if err != nil {
+		panic(err)
+	}
+
+	// Insert a picture to worksheet with scaling.
+	err = f.AddPicture("Sheet1", "D7", "image.jpg", `{"x_scale": 0.5, "y_scale": 0.5}`)
+	if err != nil {
+		panic(err)
+	}
+
+	// Insert a picture offset in the cell with printing support.
+	err = f.AddPicture("Sheet1", "H7", "image.gif",
+		`{"x_offset": 15, "y_offset": 10, "print_obj": true, "lock_aspect_ratio": false, "locked": false}`)
+	if err != nil {
+		panic(err)
+	}
+
+	// Save the xlsx file with the origin path.
+	err = f.Save()
+	if err != nil {
+		panic(err)
 	}
 }
