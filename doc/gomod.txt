@@ -10,3 +10,13 @@ C:\blockchainenv\githubProj\excelize-demo>go get github.com/sirupsen/logrus
 go: github.com/sirupsen/logrus upgrade => v1.6.0
 C:\blockchainenv\githubProj\excelize-demo>
 
+Microsoft Windows [版本 10.0.18362.778]
+(c) 2019 Microsoft Corporation。保留所有权利。
+
+C:\blockchainenv\githubProj\excelize-demo>go get github.com/360EntSecGroup-Skylar/excelize/v2
+go: downloading github.com/360EntSecGroup-Skylar/excelize/v2 v2.2.0
+go: github.com/360EntSecGroup-Skylar/excelize/v2 upgrade => v2.2.0
+go: downloading github.com/xuri/efp v0.0.0-20191019043341-b7dc4fe9aa91
+go: downloading golang.org/x/net v0.0.0-20200506145744-7e3656a0809f
+C:\blockchainenv\githubProj\excelize-demo>
+
