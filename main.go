@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/sirupsen/logrus"
 )
@@ -15,7 +17,8 @@ func main() {
 	// csvImportSmall()
 	// csvExportAppend()
 
-	xlsxImport()
+	//xlsxImport()
+	xlsxExportSample()
 }
 
 func xlsxImport() {
@@ -48,5 +51,24 @@ func xlsxImport() {
 				logrus.Debugf("strs[row_%d][col_%d] type=%T data=%+v", i, j, strs[i][j], strs[i][j])
 			}
 		}
+	}
+}
+
+func xlsxExportSample() {
+	f := excelize.NewFile()
+
+	// Create a new sheet.
+	index := f.NewSheet("Sheet2")
+
+	// Set value of a cell.
+	f.SetCellValue("Sheet1", "B2", 100)
+	f.SetCellValue("Sheet2", "A2", "Hello world.")
+
+	// Set active sheet of the workbook.
+	f.SetActiveSheet(index)
+
+	// Save xlsx file by the given path.
+	if err := f.SaveAs("Book2.xlsx"); err != nil {
+		fmt.Println(err)
 	}
 }
