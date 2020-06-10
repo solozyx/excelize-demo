@@ -1,0 +1,68 @@
+
+{"level":"debug","msg":"product order [all] list=[
+    {
+        ID:ObjectIdHex(\"5edf02a8bd640500019bb59d\")
+        OrderId:MZ15916735122tCYMlKf
+        OrderType:实物商品
+        Payment:wechat
+        UserId:272
+        PrepayId:wx09113152345798e89649b8231387844400
+        TransactionId:
+        ReceiptData:
+        FeeCents:1
+        ProductId:1
+        ProductName:小米 Redmi Note8 小金刚品质保证 高通骁龙665 4800万全场景四摄
+        Sku:小金刚, 4GB+64GB
+        ThumbImageUrl:https://secondschased.oss-cn-beijing.aliyuncs.com/lottery/model3.png
+        PresentPrice:99900
+        OriginalPrice:129900
+        Quantity:1
+        Freight:1000
+        Status:0
+        Name:张三
+        Phone:18899990000
+        Area:北京市朝阳区
+        Address:西大望路佳兆业广场1107
+        LotteryTimes:5
+        LotteryStatus:0
+        SendStatus:1
+        Operator:赵迎新
+        Express:顺丰
+        ExpressNo:SF12345678901234567890
+        CreateAt:2020-06-09T11:31:52+08:00
+        UpdateAt:2020-06-09T18:35:11+08:00
+    }
+    {
+        ID:ObjectIdHex(\"5edf2ac4ab17c30001927cd2\")
+        OrderId:MZ15916837806UotYd27
+        OrderType:实物商品
+        Payment:wechat
+        UserId:449
+        PrepayId:wx09142300551274b8561808051653590200
+        TransactionId:4200000617202006098708690660
+        ReceiptData:
+        FeeCents:1
+        ProductId:1
+        ProductName:小米 Redmi Note8 小金刚品质保证 高通骁龙665 4800万全场景四摄 Sku:小金刚, 4GB+64GB
+        ThumbImageUrl:https://secondschased.oss-cn-beijing.aliyuncs.com/lottery/model3.png
+        PresentPrice:99900
+        OriginalPrice:129900
+        Quantity:1
+        Freight:1000
+        Status:1
+        Name:哦我就问一下
+        Phone:180 8567 9799
+        Area:内蒙古 乌海市 海南区
+        Address:微信红米现在
+        LotteryTimes:5
+        LotteryStatus:1
+        SendStatus:0
+        Operator:
+        Express:
+        ExpressNo:
+        CreateAt:2020-06-09T14:23:00+08:00
+        UpdateAt:2020-06-09T14:23:11+08:00
+    }
+]","time":"2020-06-10T11:19:35+08:00"}
+
+Process finished with exit code 0
